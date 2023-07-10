@@ -29,4 +29,16 @@ public class WeatherForecastController : ControllerBase
         })
         .ToArray();
     }
+
+    [HttpGet("{daysAhead:int}", Name = "GetSpecificDayWeatherForecast")]
+    public WeatherForecast Get(int daysAhead)
+    {
+        return new WeatherForecast
+        {
+            Date = DateOnly.FromDateTime(DateTime.Now.AddDays(daysAhead)),
+            TemperatureC = Random.Shared.Next(-20, 55),
+            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+        };
+    }
+
 }
