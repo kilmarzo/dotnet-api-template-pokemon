@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Controllers"
+    "\\Controllers",
+    "\\infrastructure"
   ],
-  "SelectedNode": "\\dotnet-api-template.csproj",
+  "SelectedNode": "\\infrastructure\\webapp.bicep",
   "PreviewInSolutionExplorer": false
 }
