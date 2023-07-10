@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Controllers"
   ],
-  "SelectedNode": "\\C:\\Users\\saide\\Source\\Repos\\dotnet-api-template-said",
+  "SelectedNode": "\\dotnet-api-template.csproj",
   "PreviewInSolutionExplorer": false
 }

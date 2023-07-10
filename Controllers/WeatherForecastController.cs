@@ -36,7 +36,7 @@ public class WeatherForecastController : ControllerBase
             var summaryKey = Summaries.Keys.ElementAt(Random.Shared.Next(Summaries.Count));
             return new WeatherForecast
             {
-                Date = DateTime.Now.AddDays(index),
+                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
                 TemperatureC = Random.Shared.Next(-20, 55),
                 Summary = summaryKey,
                 Advice = Summaries[summaryKey]
@@ -46,15 +46,19 @@ public class WeatherForecastController : ControllerBase
     }
 
 
+
     [HttpGet("{daysAhead:int}", Name = "GetSpecificDayWeatherForecast")]
     public WeatherForecast Get(int daysAhead)
     {
+        var summaryKey = Summaries.Keys.ElementAt(Random.Shared.Next(Summaries.Count));
         return new WeatherForecast
         {
             Date = DateOnly.FromDateTime(DateTime.Now.AddDays(daysAhead)),
             TemperatureC = Random.Shared.Next(-20, 55),
-            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+            Summary = summaryKey,
+            Advice = Summaries[summaryKey]
         };
     }
+
 
 }
