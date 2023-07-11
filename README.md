@@ -74,6 +74,29 @@ These values will be used in the automated workflow to build and push your image
 8. Configure the pipeline to deploy a new version of the API every time a new Docker image is built.
 9. Use webhooks to notify your web app every time a new image is created of the API to have it redeploy the latest version.
 
+Certainly! Here's an example text you can include in your README file to describe the screenshots of Azure resources:
+
+If the screenshots are already uploaded to your GitHub repository and accessible via a URL, you can directly use the image URLs in the README file. Here's an example of how you can include the screenshot URLs in your README file:
+
+During the deployment process, we provisioned and configured Azure resources for hosting the .NET API. Below are screenshots from our Azure subscription showing the App Service and related resources.
+
+### Azure Resource Group
+
+The screenshot below shows the Azure Resource Group that was created to organize and manage the resources for our .NET API.
+
+![Azure Resource Group](https://github.com/kilmarzo/dotnet-api-template-said/raw/dotnet-api-template-said/azure_resourcegroup.png)
+
+### Azure App Service Plan
+
+We provisioned an Azure App Service Plan to host our .NET API. The screenshot below showcases the configuration and settings of the App Service Plan.
+
+![Azure App Service Plan](https://github.com/kilmarzo/dotnet-api-template-said/raw/dotnet-api-template-said/azure_appserviceplan.png)
+
+### Azure Web App Service
+
+The Azure Web App Service hosts our .NET API and provides the runtime environment for running our application. The screenshot below demonstrates the App Service settings and details.
+
+![Azure Web App Service](https://github.com/kilmarzo/dotnet-api-template-said/raw/dotnet-api-template-said/azure_webappservice.png)
 
 ### Relevant Branches and Commit Messages
 
@@ -86,8 +109,9 @@ The commit messages associated with this branch are as follows:
 - `Add advice to weather forecast and fix dictionary length error`: Added advice to the weather forecast by modifying the `Get` method in the `WeatherForecastController` and fixed the dictionary length error.
 - `Added
 
- IaC`: Added Infrastructure as Code (IaC) using Bicep to provision an Azure App Service for hosting the API.
+IaC`: Added Infrastructure as Code (IaC) using Bicep to provision an Azure App Service for hosting the API.
 
-Feel free to customize the branch names and commit messages to align with your specific requirements and naming conventions.
 
-Let me know if there's anything else I can help you with!
+Author: Said el Kacimi
+Source code: Reza Mirzaei
+
