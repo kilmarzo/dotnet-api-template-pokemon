@@ -74,9 +74,6 @@ These values will be used in the automated workflow to build and push your image
 8. Configure the pipeline to deploy a new version of the API every time a new Docker image is built.
 9. Use webhooks to notify your web app every time a new image is created of the API to have it redeploy the latest version.
 
-Certainly! Here's an example text you can include in your README file to describe the screenshots of Azure resources:
-
-If the screenshots are already uploaded to your GitHub repository and accessible via a URL, you can directly use the image URLs in the README file. Here's an example of how you can include the screenshot URLs in your README file:
 
 During the deployment process, we provisioned and configured Azure resources for hosting the .NET API. Below are screenshots from our Azure subscription showing the App Service and related resources.
 
