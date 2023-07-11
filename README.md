@@ -107,9 +107,8 @@ The commit messages associated with this branch are as follows:
 - `Added new endpoint to WeatherForecastController`: Added a new endpoint to the `WeatherForecastController` to extend the functionality of the API.
 - `Changed the standard Get method to include some advice with each different type of weather`: Updated the standard `Get` method in the `WeatherForecastController` to include advice corresponding to each different type of weather.
 - `Add advice to weather forecast and fix dictionary length error`: Added advice to the weather forecast by modifying the `Get` method in the `WeatherForecastController` and fixed the dictionary length error.
-- `Added
+- `Added IaC`: Added Infrastructure as Code (IaC) using Bicep to provision an Azure App Service for hosting the API.
 
-IaC`: Added Infrastructure as Code (IaC) using Bicep to provision an Azure App Service for hosting the API.
 
 
 Author: Said el Kacimi
